@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .img_container {}
+
+    img {
+      width: 100%;
+    }
+
+    .card {
+      display: flex;
+    }
+
+    main {
+      display: flex;
+    }
+
+
+
+    @media (max-width: 768px) {
+      .card {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 508px) {
+      main {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="">
+    <div class="card ">
+      <div class="img_container">
+        <img src="https://picsum.photos/id/237/200/300" alt="">
+      </div>
+      <div>
+        <h2>Card Title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nemo voluptatem ipsam corporis
+          reprehenderit,
+          est, a deserunt repellendus aliquam fugit consectetur laudantium commodi dolores? Ex unde impedit officia odit
+          beatae.</p>
+      </div>
+    </div>
+    <div class="card ">
+      <div class="img_container">
+        <img src="https://picsum.photos/id/238/200/300" alt="">
+      </div>
+      <div>
+        <h2>Card Title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nemo voluptatem ipsam corporis
+          reprehenderit,
+          est, a deserunt repellendus aliquam fugit consectetur laudantium commodi dolores? Ex unde impedit officia odit
+          beatae.</p>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>

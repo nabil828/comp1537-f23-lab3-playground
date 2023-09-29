@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .img_container {
+      width: 50%;
+      float: left;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .card {
+      width: 50%;
+      float: left;
+    }
+
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    @media (max-width: 768px) {
+      .img_container {
+        width: 100%;
+        float: none;
+      }
+    }
+
+    @media (max-width: 508px) {
+      .card {
+        width: 100%;
+        float: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="clearfix">
+    <div class="card clearfix">
+      <div class="img_container">
+        <img src="https://picsum.photos/id/237/200/300" alt="">
+      </div>
+      <div>
+        <h2>Card Title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nemo voluptatem ipsam corporis
+          reprehenderit,
+          est, a deserunt repellendus aliquam fugit consectetur laudantium commodi dolores? Ex unde impedit officia odit
+          beatae.</p>
+      </div>
+    </div>
+    <div class="card clearfix">
+      <div class="img_container">
+        <img src="https://picsum.photos/id/238/200/300" alt="">
+      </div>
+      <div>
+        <h2>Card Title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nemo voluptatem ipsam corporis
+          reprehenderit,
+          est, a deserunt repellendus aliquam fugit consectetur laudantium commodi dolores? Ex unde impedit officia odit
+          beatae.</p>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>
